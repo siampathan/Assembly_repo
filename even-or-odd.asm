@@ -19,13 +19,13 @@
       mov bl,2     ;number divided by 2
       div bl
       cmp ah,0      ;compare remainder is 0 or not
-      je even       ;jump even statment  
+      je even       ;jump even statement  
       
       lea dx,msg3   ;if number not even then print this
       mov ah,9
       int 21h  
       
-      mov ah,4ch   ;close this statment here
+      mov ah,4ch   ;close this statement here
       int 21h
       
       even:
